@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>GasPa$$</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="style.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+	<script src="map_planner.js"></script>
+</head>
+<body>
+	<div id="header"><h1>GasPa$$</h1></div>
+	<div id="content">
+		<div id ="newTripTitleDiv">
+			<!--<a id="newPortalButton" class="myButton" href="#">Enter a trip onto Joe's portal</a>-->
+			<h2>Enter a trip onto Joe's portal</h2>
+		</div>
+		<div id ="newTripDiv">
+			Map the trip:<br><br>
+			<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    		<div id="map-canvas"></div>
+    		<br>
+			<form id="enterTripForm">
+				Date: <input type="text" name="date" id="date_input"><br>
+				Total Mileage: <input type="text" name="mileage" id="mileage_input"><br>
+				Total Price: <input type="text" name="price" id="price_input"><br>
+				Price per person: <input type="text" name="pricepp" id="pricepp_input">
+				<input class="submitButtons" type="submit" name="submit" value="Submit" id="submitNewPortalInput"/>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
