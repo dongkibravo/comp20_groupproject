@@ -1,0 +1,141 @@
+
+body{
+	background-color: white;
+	font-family:arial;
+}
+
+#content{
+	background-color: #5092CD;
+}
+
+.myButton {
+-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+box-shadow:inset 0px 1px 0px 0px #ffffff;
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+background-color:#ffffff;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+border:1px solid #dcdcdc;
+display:inline-block;
+cursor:pointer;
+color:#666666;
+font-family:arial;
+font-size:20px;
+font-weight:bold;
+padding:16px 35px;
+text-decoration:none;
+text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+background-color:#f6f6f6;
+}
+.myButton:active {
+position:relative;
+top:1px;
+}
+
+.submitButtons {
+    background-color: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+     border:none;
+}
+
+
+
+.submitButtons:hover {
+    border: none;
+    background:red;
+    box-shadow: 0px 0px 1px #777;
+    
+}
+
+
+@media(min-width: 481px){
+	body{
+		width: 1000px;
+		height: 700px;
+	}
+	#header{
+
+	}
+	#content{
+		width:95%;
+		margin: 5px auto 5px auto;
+		height:95%;
+		padding-top: 20px;
+
+		-moz-border-radius:15px;	
+		border-radius: 15px;
+	}
+	#newPortalButtonDiv{
+		border: 1px solid red;
+		width: 300px;
+		height:100%px;
+		margin: 20px auto 10px 20px; 
+	}
+	#newPortalDiv{
+		margin: 20px auto 10px 20px;
+		display: none;
+		height:80px;
+	}
+
+	#resendButtonDiv{
+		margin: 20px auto 10px 20px; 
+	}
+	#resendDiv{
+		margin: 20px auto 10px 20px;
+		display: none;
+		height:80px;
+	}
+
+	.tripLog{
+		border:2px solid black;
+		background-color: white;
+	}
+	td,th{
+		border:1px solid red;
+		padding: 0.5rem;
+	}
+
+
+
+}
+@media(max-width: 480px){
+	body{
+		max-width: 480px;
+		width:100%;
+		height:400px;
+	}
+	#content{
+		width:90%;
+		margin: 5px auto 5px auto;
+		height:95%;
+
+		border-radius: 10px;
+		-moz-border-radius:10px;	
+	}
+
+}
+

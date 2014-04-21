@@ -1,0 +1,22 @@
+{
+  "name": "gas",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuftsdev/comp20-s2014-team2"
+  },
+  "author": "Team2",
+  "license": "ISC",
+  "homepage": "https://github.com/tuftsdev/comp20-s2014-team2",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "logfmt": "^1.1.2",
+    "mongodb": "^1.4.0",
+    "connect": "^2.14.4",
+    "express": "^3.4.8"
+  }
+}
