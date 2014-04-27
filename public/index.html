@@ -8,7 +8,24 @@
 	<link rel="stylesheet" href="style.css"/>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
-
+	<script>
+	function store(){
+		var inputbox = docucument.getElementById("newPortalForm");
+	
+		data = "username=" + inputbox.firstname.value + "&email=" + inputbox.lastname.value;
+	
+		$.ajax({
+  			type: "POST",
+  			url:"http://gass-pass.herokuapp.com/submit.json",
+  			data: data,
+  			dataType: JSON
+		});
+	}
+	
+	
+	</script>
+	
+	
 </head>
 <body>
 	<div id="header"><h1>GasPa$$</h1></div>
@@ -20,7 +37,7 @@
 			<form id="newPortalForm">
 				Name: <input type="text" name="firstname"><br>
 				Email: <input type="text" name="lastname">
-				<input class="submitButtons" type="submit" name="submit" value="Create New Portal" id="submitNewPortalInput"/>
+				<input class="submitButtons" type="submit" name="submit" value="Create New Portal" id="submitNewPortalInput" onchange=store() />
 			</form>
 		</div>
 
