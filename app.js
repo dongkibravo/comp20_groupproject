@@ -28,25 +28,34 @@ app.get('/', function(req, res){
 	res.render('index.html');
 });
 
-/*
 app.post('/submit.json', function(req, res){
 
 
 //posting portal information
 	db.collection('portal-information', function(error, collection) {
-		collection.insert({"order":request.body.username, 
-						   "score":parseInt(request.body.score), 
-						   "grid":request.body.grid, "created_at":request.body.created_at},
-						  function(error, saved) {
-			response.send(200);
+		//collection.insert({_id:req.body.username, number:req.body.number, users:[]}, function(error, saved){
+				collection.insert({_id:"dong", number:1234, users:[]}, function(error, saved){
+
+			res.send(200);
 		});
 	});
+	
+	
+});
 
 
 
+app.get('/data.json', function(req, res){
+
+	db.collection('portal-information', function(error, collection){
+		collection.find().toArray(function(error, docs){
+			res.send(JSON.stringify(docs));
+		});
+	});
+	
+});
 
 
-}*/
 
 
 app.listen(process.env.PORT || 3000);
